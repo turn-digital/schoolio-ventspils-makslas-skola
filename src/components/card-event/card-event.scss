@@ -1,3 +1,10 @@
+@import "../../styles/reset.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/grid-settings.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/shame.scss";
+
 .card-event {
   position: relative;
   display: flex;
@@ -41,7 +48,7 @@
         display: inline-block;
         border-radius: 50%;
         background-color: #008752;
-        content: '';
+        content: "";
         transform: translate(-50%, -50%);
       }
     }
@@ -66,7 +73,7 @@
       width: 4px;
       height: 100%;
       background-color: $color-primary;
-      content: '';
+      content: "";
     }
 
     span {

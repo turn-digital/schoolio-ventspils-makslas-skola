@@ -1,3 +1,10 @@
+@import "../../styles/reset.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/grid-settings.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/shame.scss";
+
 .footer {
   margin-top: 60px;
   padding-top: 32px;
@@ -27,7 +34,7 @@
         display: inline-block;
         border: 2px solid $color-border-tertiary;
         border-radius: 4px;
-        content: '';
+        content: "";
         opacity: 0;
         transform: translate(-50%, -50%);
       }
@@ -95,7 +102,7 @@
           display: inline-block;
           border: 2px solid $color-border-tertiary;
           border-radius: 4px;
-          content: '';
+          content: "";
           opacity: 0;
           transform: translate(-50%, -50%);
         }
@@ -122,7 +129,7 @@
         width: 1px;
         height: 100%;
         background-color: $color-border-stone;
-        content: '';
+        content: "";
       }
     }
 
@@ -157,7 +164,7 @@
           display: inline-block;
           border: 2px solid $color-border-tertiary;
           border-radius: 4px;
-          content: '';
+          content: "";
           opacity: 0;
           transform: translate(-50%, -50%);
         }
@@ -168,16 +175,16 @@
           }
         }
 
-        &:hover[href*='facebook'] {
+        &:hover[href*="facebook"] {
           fill: $color-soc-icon--fb;
         }
-        &:hover[href*='instagram'] {
+        &:hover[href*="instagram"] {
           fill: $color-soc-icon--insta;
         }
-        &:hover[href*='youtube'] {
+        &:hover[href*="youtube"] {
           fill: $color-soc-icon--yt;
         }
-        &:hover[href*='linked'] {
+        &:hover[href*="linked"] {
           fill: $color-soc-icon--in;
         }
       }

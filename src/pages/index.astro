@@ -1,0 +1,25 @@
+---
+import Header from "../components/header/Header.jsx";
+import Footer from "../components/footer/Footer.jsx";
+import News from "../components/news/News.jsx";
+import Layout1 from "../components/layout1/Layout1.jsx";
+import Layout2 from "../components/layout2/Layout2.jsx";
+import Layout3 from "../components/layout3/Layout3.jsx";
+---
+
+<main>
+  <div className="home page__flexblock">
+    <Header />
+    <section className="home__section home__section--hero">
+      <Layout1 />
+      <!-- <Layout2 />
+      <Layout3 /> -->
+    </section>
+    <News />
+    <Footer />
+  </div>
+</main>
+
+<style lang="scss">
+  @import "../styles/style.scss";
+</style>

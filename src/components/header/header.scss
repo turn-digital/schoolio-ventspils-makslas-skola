@@ -1,44 +1,50 @@
+@import "../../styles/reset.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/grid-settings.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/shame.scss";
+
 .header {
   position: relative;
   z-index: 100;
 
   &__link {
+    position: relative;
+    margin-left: 30px;
+    padding: 12px 14px;
+    display: block;
+    color: $color-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border-left: 3px solid transparent;
 
-      position: relative;
-      margin-left: 30px;
-      padding: 12px 14px;
+    &:before {
+      @include transition-fast;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
       display: block;
-      color: $color-text;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 18px;
-      border-left: 3px solid transparent;
-     
-      &:before {
-        @include transition-fast;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 3px;
-        height: 100%;
-        display: block;
-        background-color: transparent;
-        content: '';
-      }
+      background-color: transparent;
+      content: "";
+    }
 
-      &:hover,
-      &:focus-visible {
-        background-color: $color-bg-1;
-        border-left-color: var(--color-primary) ;
-      }
+    &:hover,
+    &:focus-visible {
+      background-color: $color-bg-1;
+      border-left-color: var(--color-primary);
+    }
 
-      &-hide {
-        display: none;
-      }
+    &-hide {
+      display: none;
+    }
 
-      &-visible {
-        display: block;
-      }
+    &-visible {
+      display: block;
+    }
   }
 
   &__multi {
@@ -135,7 +141,7 @@
           }
         }
       }
-        
+
       // &.header__menu-item--current  show only active multisite active submenu item.
       &.header__menu-item--current .current-menu-item {
         .header__submenu-link {
@@ -195,7 +201,7 @@
       cursor: pointer;
       outline: none;
 
-      &:hover {  
+      &:hover {
         background-color: $color-bg-light;
       }
 
@@ -205,11 +211,11 @@
 
       &--chev {
         position: relative;
-      
+
         &:after {
           @include position-absolute;
           @include transition-fast;
-          background-image: url("../../assets/images/svg/icon-chevron-right.svg");
+          background-image: url("../../images/svg/icon-chevron-right.svg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: 12px;
@@ -244,7 +250,6 @@
 
   &__list,
   &__submenu {
-
     @include transition-fast;
     position: relative;
     display: flex;
@@ -270,14 +275,13 @@
       }
     }
 
-    &-span { 
+    &-span {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     &-btn {
-    
       transform: rotate(90deg);
       @include transition-fast;
       padding: 0;
@@ -329,7 +333,7 @@
       color: $color-text;
       font-size: 14px;
       font-weight: 400;
-      line-height: 18px; 
+      line-height: 18px;
 
       & a {
         color: $color-text;
@@ -344,7 +348,7 @@
         height: 100%;
         display: block;
         background-color: transparent;
-        content: '';
+        content: "";
       }
 
       &:hover,
@@ -352,7 +356,7 @@
         background-color: $color-bg-1;
       }
 
-      &:focus-visible{
+      &:focus-visible {
         &:before {
           background-color: $color-primary;
         }
@@ -379,7 +383,7 @@
     }
   }
   @include size-md {
-    border-bottom: 1px solid $color-border-stone;  
+    border-bottom: 1px solid $color-border-stone;
 
     .header__link {
       z-index: 1;
@@ -412,7 +416,7 @@
           width: 100%;
           height: 2px;
           background-color: transparent;
-          content: '';
+          content: "";
         }
 
         &--active {
@@ -454,7 +458,7 @@
       }
     }
 
-    &__submenu{
+    &__submenu {
       // display: none;
       position: absolute;
       left: 0;
@@ -510,7 +514,7 @@
       &-link {
         padding: 8px;
         display: inline-block;
-        
+
         .header__menu-item {
           visibility: hidden;
         }
@@ -525,7 +529,7 @@
           display: inline-block;
           border: 2px solid $color-border-tertiary;
           border-radius: 4px;
-          content: '';
+          content: "";
           font-size: 16px;
           font-weight: 600;
           opacity: 0;
@@ -541,11 +545,11 @@
           width: 100%;
           height: 2px;
           display: block;
-          content: '';
+          content: "";
           background-color: $color-bg-tertiary;
           transform: translateX(-101%);
         }
-  
+
         &:hover {
           &:after {
             transform: translateX(0);
