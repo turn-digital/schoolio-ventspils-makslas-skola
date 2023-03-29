@@ -40,7 +40,7 @@ const Content = (props) => {
               <ul className="quick-links quick-links--simple ">
                 <li className="quick-links__item">
                   <a
-                    href="https://www.salgalesmms.lv/sakumlapa/nodarbibu-grafiks/"
+                    href={"/contact"}
                     title="Nodarbību grafiki"
                     className="link "
                   >
@@ -60,7 +60,7 @@ const Content = (props) => {
                 </li>
                 <li className="quick-links__item">
                   <a
-                    href="https://www.salgalesmms.lv/uznemsana/muzikas-makslas-izglitibas-programmas/"
+                    href={"/contact"}
                     title="Programmu piedāvājums"
                     className="link "
                   >

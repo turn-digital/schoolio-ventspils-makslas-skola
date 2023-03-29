@@ -29,7 +29,7 @@ const Content = (props) => {
           </div>
           <div className="hero-rectangle__more">
             <a
-              href="https://www.ozolniekuvsk.lv/par-skolu/dokumenti/"
+              href={"/contact"}
               title="Dokumenti"
               target="_blank"
               rel="noopener"
@@ -55,7 +55,7 @@ const Content = (props) => {
             <ul className="quick-links quick-links--simple ">
               <li className="quick-links__item">
                 <a
-                  href={process.env.REACT_APP_URL_TO_REDIRECT}
+                  href={"/contact"}
                   title="Stundu izmaiņas"
                   target="_blank"
                   className="link "
@@ -78,7 +78,7 @@ const Content = (props) => {
               </li>
               <li className="quick-links__item">
                 <a
-                  href={process.env.REACT_APP_URL_TO_REDIRECT}
+                  href={"/contact"}
                   title="Stundu saraksts"
                   target="_blank"
                   rel="noreferrer"
@@ -101,7 +101,7 @@ const Content = (props) => {
               </li>
               <li className="quick-links__item">
                 <a
-                  href={process.env.REACT_APP_URL_TO_REDIRECT}
+                  href={"/contact"}
                   title="Autobusu saraksts"
                   target="_blank"
                   rel="noreferrer"
@@ -124,7 +124,7 @@ const Content = (props) => {
               </li>
               <li className="quick-links__item">
                 <a
-                  href={process.env.REACT_APP_URL_TO_REDIRECT}
+                  href={"/contact"}
                   title="Ēdināšana"
                   target="_blank"
                   rel="noreferrer"

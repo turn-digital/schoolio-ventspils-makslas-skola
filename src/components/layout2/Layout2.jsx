@@ -37,11 +37,7 @@ const Content = (props) => {
                 palīdzība, tas tiek dots.
               </div>
               <div className="hero-square__more">
-                <a
-                  href="http://www.garozaspamatskola.lv/par-skolu/"
-                  title="Vairāk par skolu"
-                  className="link "
-                >
+                <a href={"/contact"} title="Vairāk par skolu" className="link ">
                   <span>Vairāk par skolu</span>
                   <svg
                     width="14"
@@ -64,11 +60,7 @@ const Content = (props) => {
         <div className="wrapper">
           <ul className="quick-links quick-links--horizontal quick-links--large">
             <li className="quick-links__item">
-              <a
-                className="quick-links__link"
-                href="http://www.garozaspamatskola.lv/sakumlapa/stundu-laiki/"
-                target=""
-              >
+              <a className="quick-links__link" href={"/contact"} target="">
                 Stundu laiki
                 <svg
                   width="9"
@@ -84,11 +76,7 @@ const Content = (props) => {
               </a>
             </li>
             <li className="quick-links__item">
-              <a
-                className="quick-links__link"
-                href="http://www.garozaspamatskola.lv/sakumlapa/edinasana/"
-                target=""
-              >
+              <a className="quick-links__link" href={"/contact"} target="">
                 Ēdināšana
                 <svg
                   width="9"
@@ -104,11 +92,7 @@ const Content = (props) => {
               </a>
             </li>
             <li className="quick-links__item">
-              <a
-                className="quick-links__link"
-                href="http://www.garozaspamatskola.lv/sakumlapa/skolas-autobuss/"
-                target=""
-              >
+              <a className="quick-links__link" href={"/contact"} target="">
                 Skolas autobuss
                 <svg
                   width="9"
@@ -124,11 +108,7 @@ const Content = (props) => {
               </a>
             </li>
             <li className="quick-links__item">
-              <a
-                className="quick-links__link"
-                href="https://www.garozaspamatskola.lv/stundu-izmainas/"
-                target=""
-              >
+              <a className="quick-links__link" href={"/contact"} target="">
                 Stundu izmaiņas
                 <svg
                   width="9"
